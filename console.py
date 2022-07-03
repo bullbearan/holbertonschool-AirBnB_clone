@@ -46,7 +46,7 @@ class HBNBCommand(cmd.Cmd):
                 self.do_destroy(f"{arg[0]} {arg[2]}")
             elif arg[1] == "update":
                 print(arg)
-                self.do_update(f"{arg[0]} {arg[2]} {arg[3]} {arg[4]}")
+                self.do_update(f"{arg[0]} {arg[2]} {arg[3]} \"{arg[4]}\"")
         else:
             cmd.Cmd.default(self, line)
 
