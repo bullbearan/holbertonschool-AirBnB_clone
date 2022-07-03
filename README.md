@@ -131,8 +131,8 @@ ahmed@ubuntu:~/holbertonschool-AirBnB_clone$
 ```
 
 ## "Special" usage
-Retrieve all instances of a class.
 ### User.all()
+Retrieve all instances of a class.
 ```bash
 ahmed@ubuntu:~/holbertonschool-AirBnB_clone$ ./console.py
 (hbnb) User.all()
