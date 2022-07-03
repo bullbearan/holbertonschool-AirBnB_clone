@@ -32,6 +32,7 @@ def check_digit(str_num):
 class HBNBCommand(cmd.Cmd):
     '''This is a class'''
     prompt = "(hbnb) "
+
     def default(self, line):
         arg = re.split("[.(), \"\"]+", line)
         if arg[0] in classes and arg[1] in commands:
