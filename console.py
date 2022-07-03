@@ -34,7 +34,7 @@ class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "
 
     def default(self, line):
-        arg = re.split("[.()\"\"]+", line)
+        arg = re.split("[.(), \"\"]+", line)
         if arg[0] in classes and arg[1] in commands:
             if arg[1] == "all":
                 self.do_all(arg[0])
@@ -45,6 +45,7 @@ class HBNBCommand(cmd.Cmd):
             elif arg[1] == "destroy":
                 self.do_destroy(f"{arg[0]} {arg[2]}")
             elif arg[1] == "update":
+                print(arg)
                 self.do_update(f"{arg[0]} {arg[2]} {arg[3]} {arg[4]}")
         else:
             cmd.Cmd.default(self, line)
