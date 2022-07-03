@@ -32,14 +32,18 @@ def check_digit(str_num):
 class HBNBCommand(cmd.Cmd):
     '''This is a class'''
     prompt = "(hbnb) "
-
     def default(self, line):
         arg = re.split("[.(), \"\"]+", line)
         if arg[0] in classes and arg[1] in commands:
             if arg[1] == "all":
                 self.do_all(arg[0])
             elif arg[1] == "count":
-                print("hello")
+                counter = 0
+                dict_of_objs = storage.all()
+                for key in dict_of_objs:
+                    if arg[0] in key:
+                        counter += 1
+                print(counter)
             elif arg[1] == "show":
                 self.do_show(f"{arg[0]} {arg[2]}")
             elif arg[1] == "destroy":
