@@ -1,0 +1,39 @@
+footer {
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid #cccccc;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  footer {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  footer {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  footer {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-device-width: 640px) {
+  footer {
+    width: 400px;
+    height: 200px;
+  }
+}
