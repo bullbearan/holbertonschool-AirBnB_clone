@@ -1,0 +1,141 @@
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 44px;
+}
+
+.places h1 {
+  font-size: 30px;
+}
+
+.places > div {
+  width: 390px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ff5a5f;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: relative;
+  top: 50px;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+article h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+
+.last-node {
+  position: relative;
+  left: 45px;
+}
+
+.price_by_night {
+  color: #ff5a5f;
+  border: 4px solid #ff5a5f;
+  border-radius: 100%;
+  min-width: 60px;
+  height: 60px;
+  font-size: 30px;
+  margin: 0 0 12px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+  left: 20px;
+}
+
+.information {
+  height: 80px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+article h2 {
+  position: relative;
+  left: 25%;
+}
+
+.user {
+  position: relative;
+  right: 32%;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+article.second .price_by_night {
+  position: relative;
+  left: -0%;
+  margin-left: 100px;
+}
+
+article.second h2 {
+  margin-right: 10px;
+}
+
+article.third .price_by_night {
+  position: relative;
+  left: 30px;
+}
+
+article.second > .user {
+  margin-left: 20px;
+}
+
+article.third > .user {
+  margin-left: 20px;
+}
+
+article div.guest {
+  background-image: url("images/guests_icon.png");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  position: relative;
+  left: 5px;
+}
+
+article div.bedroom {
+  background-image: url("images/bedrooms_icon.png");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  position: relative;
+  left: 9px;
+}
+
+article div.bathroom {
+  background-image: url("images/bathrooms_icon.png");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  position: relative;
+  left: 12px;
+}
+
+.max_guest,
+.number_rooms,
+.number_bathrooms {
+  width: 100px;
+  margin-left: 25px;
+}
+
+div.description {
+  margin-top: 4px;
+  line-height: 1.8;
+}
